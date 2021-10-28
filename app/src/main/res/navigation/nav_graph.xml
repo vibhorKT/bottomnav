@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.bottomnavbar.HomeFragment"
+        android:label="HomeFragment"
+        tools:layout="@layout/home_fragment">
+
+        <action
+            android:id="@+id/to_homeFragment1"
+            app:destination="@id/homeFragment1" />
+
+        <action
+            android:id="@+id/to_homeFragment2"
+            app:destination="@id/homeFragment2" />
+
+        <action
+            android:id="@+id/to_commonFragment"
+            app:destination="@id/commonFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/notificationFragment"
+        android:name="com.example.bottomnavbar.NotificationFragment"
+        android:label="NotificationFragment"
+        tools:layout="@layout/notification_fragment">
+        <action
+            android:id="@+id/to_notificationFragment1"
+            app:destination="@id/notificationFragment1" />
+
+        <action
+            android:id="@+id/to_notificationFragment2"
+            app:destination="@id/notificationFragment2" />
+
+        <action
+            android:id="@+id/to_commonFragment"
+            app:destination="@id/commonFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/settingFragment"
+        android:name="com.example.bottomnavbar.SettingFragment"
+        android:label="SettingFragment"
+        tools:layout="@layout/setting_fragment" />
+
+    <fragment
+        android:id="@+id/homeFragment1"
+        android:name="com.example.bottomnavbar.ForHomeFragment1"
+        android:label="ForHomeFragment1"
+        tools:layout="@layout/for_home1" />
+
+    <fragment
+        android:id="@+id/homeFragment2"
+        android:name="com.example.bottomnavbar.ForHomeFragment2"
+        android:label="ForHomeFragment2"
+        tools:layout="@layout/for_home2" />
+
+    <fragment
+        android:id="@+id/commonFragment"
+        android:name="com.example.bottomnavbar.CommonFragment"
+        android:label="CommonFragment"
+        tools:layout="@layout/common_fragment" />
+
+    <fragment
+        android:id="@+id/notificationFragment1"
+        android:name="com.example.bottomnavbar.ForNotificationFragment1"
+        android:label="ForNotificationFragment1"
+        tools:layout="@layout/for_notification1"/>
+
+    <fragment
+        android:id="@+id/notificationFragment2"
+        android:name="com.example.bottomnavbar.ForNotificationFragment2"
+        android:label="ForNotificationFragment1"
+        tools:layout="@layout/for_notification1"/>
+
+</navigation>
